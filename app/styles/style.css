@@ -1,0 +1,23 @@
+.first table{
+    border-collapse: collapse;
+}
+.first table tr,th,td{
+    border:1px solid #ddd;
+    padding: 10px;
+}
+.first caption{
+    font-weight: bold;
+    color: #f00;
+}
+
+.second table{
+    border-collapse: collapse;
+}
+.second table tr,th,td{
+    border:1px solid #ddd;
+    padding: 10px;
+}
+.second caption{
+    font-weight: bold;
+    color: #00f;
+}
