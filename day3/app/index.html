@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Exercise1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="center" ng-app="myapp">
+<h1 class="heading">Todo Application</h1>
+<div ng-controller="controller as vm">
+    <div class="btn-group">
+        <h3>Select data as you want to see</h3><br/>
+        <input type="button" value="Complete Task" class="btn-default green" ng-click="showCompleteData=!showCompleteData">
+        <input type="button" value="Incomplete Task" class="btn-default red" ng-click="showInCompleteData=!showInCompleteData">
+        <input type="button" value="Due Date Task" class="btn-default blue" ng-click="showDuedateData=!showDuedateData">
+        <input type="button" value="Cross Date Task" class="btn-default black" ng-click="showCrossdateData=!showCrossdateData">
+    </div>
+
+    <table ng-show="!showCompleteData">
+        <caption class="green">All Tasks with details which is complete</caption>
+        <tr>
+            <th>Serial No.</th>
+            <th>Task Title</th>
+            <th>Task Description</th>
+            <th>Duedate</th>
+            <th>Status</th>
+        </tr>
+        <tr ng-repeat="obj in vm.list.completeTask">
+            <td>{{$index+1}}</td>
+            <td>{{obj.task}}</td>
+            <td>{{obj.description}}</td>
+            <td>{{obj.duedate}}</td>
+            <td>{{obj.status}}</td>
+        </tr>
+    </table>
+    <br/>
+    <table ng-show="!showInCompleteData">
+        <caption class="red">All Tasks with details which is incomplete</caption>
+        <tr>
+            <th>Serial No..</th>
+            <th>Task Title</th>
+            <th>Task Description</th>
+            <th>Duedate</th>
+            <th>Status</th>
+        </tr>
+        <tr ng-repeat="obj in vm.list.inCompleteTask">
+            <td>{{$index+1}}</td>
+            <td>{{obj.task}}</td>
+            <td>{{obj.description}}</td>
+            <td>{{obj.duedate}}</td>
+            <td>{{obj.status}}</td>
+        </tr>
+    </table>
+    <br/>
+
+    <table ng-show="!showDuedateData">
+        <caption class="blue">All Tasks with details which is on dueDate</caption>
+        <tr>
+            <th>Serial No.</th>
+            <th>Task Title</th>
+            <th>Task Description</th>
+            <th>Duedate</th>
+            <th>Status</th>
+        </tr>
+        <tr ng-repeat="obj in vm.list.dueDate">
+            <td>{{$index+1}}</td>
+            <td>{{obj.task}}</td>
+            <td>{{obj.description}}</td>
+            <td>{{obj.duedate}}</td>
+            <td>{{obj.status}}</td>
+        </tr>
+    </table>
+    <br/>
+    <table ng-show="!showCrossdateData">
+        <caption class="black">All Tasks with details which is on crossdate</caption>
+        <tr>
+            <th>Serial No.</th>
+            <th>Task Title</th>
+            <th>Task Description</th>
+            <th>Duedate</th>
+            <th>Status</th>
+        </tr>
+        <tr ng-repeat="obj in vm.list.crossDate">
+            <td>{{$index+1}}</td>
+            <td>{{obj.task}}</td>
+            <td>{{obj.description}}</td>
+            <td>{{obj.duedate}}</td>
+            <td>{{obj.status}}</td>
+        </tr>
+    </table>
+
+</div>
+<script src="./build/bundle.js"></script>
+</body>
+</html>
