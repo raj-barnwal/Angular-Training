@@ -11,8 +11,8 @@ app.controller('controller', function (todolist) {
                 inCompleteTask: []
             };
 
-            //System Date code
-            var taskDate = new Date().getDate() + "-" + (new Date().getMonth() + 1) + "-" + new Date().getFullYear();
+            var MyDate = new Date();
+            var taskDate = ('0' + MyDate.getDate()).slice(-2) + '-' + ('0' + (MyDate.getMonth()+1)).slice(-2) + '-' + MyDate.getFullYear();
 
             angular.forEach(response.data, function (taskLists) {
                 if (taskLists.duedate === taskDate) {
