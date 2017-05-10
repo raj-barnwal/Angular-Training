@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Exercise-5</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body ng-app="app">
+<div ng-controller="myController as vm">
+    <h1 class="heading">{{vm.title}}</h1>
+    <h3>Add postfix value after number</h3>
+    Enter any Number:<input type="number" title="number" ng-model="value"><br/>
+    <span>{{value | addPostFix}}</span>
+
+    <h3>Change characters into capitalize after 3rd characters</h3>
+    Enter any Number:<input type="text" title="number" ng-model="stringValue"><br/>
+    <span>{{stringValue | changeAfterThreeChar : 3}}</span>
+
+    <h3>Form Elements with AngularJS Validation.</h3>
+    <form name="myForm" novalidate>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" title="name" placeholder="Enter name" ng-model="name" required></td>
+            </tr>
+            <tr>
+                <td>D.O.B.</td>
+                <td><input type="date" title="dob" ng-model="dob" placeholder="Enter Date of birth" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" ng-model="email" placeholder="Enter Email" title="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+
+<script src="./build/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    margin:0;
+}
+.heading{
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+h3{
+    color: #00f;
+}
+form{
+    margin-top: 20px;
+}
+input{
+    width:200px;
+    border-radius: 3px;
+    margin: 5px;
+}
+input[type='button']{
+    width: 150px;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+input.ng-empty{
+    border: 1px solid blue;
+}
+input.ng-invalid{
+    border: 2px solid #f00;
+}
+
+
+
