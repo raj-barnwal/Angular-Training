@@ -1,0 +1,13 @@
+<table class="todo-data">
+    <tr>
+        <th>Serial No.</th>
+        <th>Task Title</th>
+        <th>Details Info.</th>
+
+    </tr>
+    <tr data-ng-repeat="obj in data track by $index">
+        <td>{{$index+1}}</td>
+        <td>{{obj.task}}</td>
+        <td><a ui-sref="todoDetails({taskId:obj.taskId})">More Details</a></td>
+    </tr>
+</table>

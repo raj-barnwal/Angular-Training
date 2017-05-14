@@ -1,0 +1,30 @@
+<div data-ng-controller="todoDetailsController as vp">
+    <table>
+        <caption>Todo Details</caption>
+        <tr>
+            <th>Task Id.</th>
+            <td>{{vp.list.taskId}}</td>
+        </tr>
+        <tr>
+            <th>Task Title</th>
+            <td>{{vp.list.task}}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{{vp.list.description}}</td>
+        </tr>
+        <tr>
+            <th>DueDate</th>
+            <td>{{vp.list.duedate}}</td>
+        </tr>
+        <tr>
+            <th>Status</th>
+            <td>{{vp.list.status}}</td>
+        </tr>
+        <tr>
+            <td colspan="2"><a data-ui-sref="todo()" class="btn btn-primary pull-right">Back to Todo</a></td>
+        </tr>
+    </table>
+
+</div>
+

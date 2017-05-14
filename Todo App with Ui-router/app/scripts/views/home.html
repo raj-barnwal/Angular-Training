@@ -1,0 +1,57 @@
+<div class="home">
+    <a class="btn btn-primary pull-right"><span class="glyphicon glyphicon-user" data-toggle="modal"
+                                                data-target="#myModal">&nbsp;Login</span></a>
+    <h3>Welcome to Angular JS learning Website</h3>
+    <p>
+        AngularJS version 1.0 was released in 2012.<br/>
+
+        Miško Hevery, a Google employee, started to work with AngularJS in 2009.<br/>
+
+        The idea turned out very well, and the project is now officially supported by Google.
+
+    </p>
+</div>
+
+<div data-ng-controller="loginController">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">User Login</h3>
+                </div>
+
+                <form role="form" class="form-group" name="loginForm" novalidate>
+                    <div class="modal-body">
+                        <label for="usr">Email Id:</label>
+                        <input type="email" class="form-control" id="usr" name="email"
+                               placeholder="Enter email id" data-ng-model="email" required>
+
+                        <span class="error"
+                              data-ng-show="loginForm.email.$error.required">Email id is required.</span>
+                        <span class="error"
+                              data-ng-show="loginForm.email.$error.email">Invalid email address.</span><br/>
+
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" name="password"
+                               placeholder="Enter password" data-ng-model="password" required>
+                        <span class="error"
+                              data-ng-show="loginForm.password.$error.required">password is required.</span><br/>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <input type="submit" value="Login" class=" btn btn-primary pull-right" ng-click="login()"
+                               ng-disabled="loginForm.email.$dirty && loginForm.email.$invalid ||
+                                        loginForm.password.$dirty && loginForm.password.$invalid"
+                               data-dismiss="modal">
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

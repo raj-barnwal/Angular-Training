@@ -1,0 +1,130 @@
+body {
+  margin: 0 auto;
+  background-color: #ddd; }
+
+.header h1 {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  text-align: center; }
+  .header h1 a {
+    text-decoration: none;
+    color: #fff; }
+
+caption {
+  font-size: 20px;
+  color: #00f;
+  font-weight: bold; }
+
+.table-heading {
+  display: inline-block;
+  padding: 5px 50px; }
+
+.todo-data {
+  width: 100%; }
+
+.todo-data, th, td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px; }
+
+.todo-data tr:nth-child(odd) {
+  background-color: #f2f2f2; }
+
+.todo-data tr:nth-child(even) {
+  background-color: #ffffff; }
+
+.red {
+  background-color: #f00;
+  color: #fff;
+  font-weight: bold; }
+
+.green {
+  background-color: #080;
+  color: #fff;
+  font-weight: bold; }
+
+.blue {
+  background-color: #00f;
+  color: #fff;
+  font-weight: bold; }
+
+.black {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold; }
+
+.todo-form {
+  border: 2px solid #ddd !important; }
+
+.todo-form tr, td, th {
+  border: none; }
+
+.todo-form tr {
+  margin: 10px; }
+
+.navbar {
+  padding: 0;
+  list-style-type: none; }
+
+li a {
+  display: inline-block;
+  padding: 10px;
+  margin: 1px;
+  background-color: #337ab7;
+  width: 150px;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  color: #fff; }
+  li a:hover, li a :visited {
+    text-decoration: none;
+    background-color: black;
+    color: #fff; }
+
+.contents {
+  float: left;
+  border: 1px solid #ddd;
+  width: 85.3%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.about, .home, .contact h3, p {
+  color: #673AB7;
+  text-align: center;
+  font-size: 18px; }
+
+.about, .home, .contact p {
+  color: #b8471e; }
+
+input[type='text'].ng-empty {
+  border: 1px solid #f00; }
+
+input[type='password'].ng-empty {
+  border: 1px solid #f00; }
+
+input[type='email'].ng-empty {
+  border: 1px solid #f00; }
+
+input[type='date'].ng-invalid {
+  border: 1px solid #f00; }
+
+input[type='email'].ng-invalid {
+  border: 1px solid #f00; }
+
+.error {
+  color: #f00;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 3px; }
+
+.search {
+  height: 35px;
+  width: 200px;
+  border-radius: 5px;
+  color: #f00;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

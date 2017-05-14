@@ -1,0 +1,85 @@
+<div data-ng-controller="addTaskController">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h3 class="text-center">Task details entered by User</h3>
+            <form name="myForm" class="form-group" data-ng-submit="addTask()" novalidate>
+                <table class="todo-form">
+                    <tr>
+                        <th>Task Name:</th>
+                        <td><input type="text" name="task" placeholder="Enter task title" data-ng-model="taskTitle"
+                                   class="form-control" required></td>
+                        <td><span class="error"
+                                  data-ng-show="myForm.task.$error.required">Task Title is required.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Description:</th>
+                        <td><input type="text" name="description" placeholder="Enter description of task"
+                                   data-ng-model="description" class="form-control" required></td>
+                        <td><span class="error" data-ng-show="myForm.description.$error.required">Task description is required.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>DueDate:</th>
+                        <td><input type="date" name="date" class="form-control" data-ng-model="duedate"
+                                   title="Select Date"
+                                   required></td>
+                        <td><span class="error" data-ng-show="myForm.date.$error.required">Task date is required.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" value="Add Task" data-ng-click="addTask()"
+                                               class="btn btn-primary pull-right"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<!--<p>Added new Task</p>-->
+<!--<div data-ng-controller="addTaskController">-->
+<!--<table>-->
+<!--<tr data-ng-repeat="onetodo in todos track by $index">-->
+<!--<td>{{onetodo.title}}</td>-->
+<!--<td>{{onetodo.description}}</td>-->
+<!--<td>{{onetodo.duedate}}</td>-->
+<!--</tr>-->
+<!--</table>-->
+<!--</div>-->
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div data-ng-controller="todoListController as vm">
+            <div>
+                <h3 class="table-heading green">Complete Todo List</h3>
+                <input type="text" data-ng-model="task" placeholder="Enter task Name" class="search">
+                <todo-directive data="vm.list.completeTask | filter:task"></todo-directive>
+            </div>
+
+            <div>
+                <h3 class="table-heading red">Incomplete Todo List</h3>
+                <input type="text" data-ng-model="task" placeholder="Enter task Name" class="search">
+                <todo-directive data="vm.list.inCompleteTask"></todo-directive>
+            </div>
+
+            <div>
+                <h3 class="table-heading blue">DueDate Todo List</h3>
+                <input type="text" data-ng-model="task" placeholder="Enter task Name" class="search">
+                <todo-directive data="vm.list.dueDate"></todo-directive>
+            </div>
+
+            <div>
+                <h3 class="table-heading black">CrossDate Todo List</h3>
+                <input type="text" data-ng-model="task" placeholder="Enter task Name" class="search">
+                <todo-directive data="vm.list.crossDate"></todo-directive>
+            </div>
+
+        </div>
+    </div>
+</div>
+
