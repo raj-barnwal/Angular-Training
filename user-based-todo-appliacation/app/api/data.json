@@ -1,0 +1,96 @@
+[
+  {
+    "username": "Raj Barnwal",
+    "todos": [
+      {
+        "taskId": 1,
+        "task": "Angular JS 1.5.1",
+        "description": "Angular tutorials from tutorialPoint",
+        "duedate": "08-05-2017",
+        "status": "complete"
+      },
+      {
+        "taskId": 2,
+        "task": "React Framework",
+        "description": "React tutorials from github.facebook",
+        "duedate": "06-05-2017",
+        "status": "complete"
+      },
+      {
+        "taskId": 3,
+        "task": "Learn Bootstrap",
+        "description": "Bootstrap tutorials from W3Schools",
+        "duedate": "07-05-2017",
+        "status": "incomplete"
+      }
+    ]
+  },
+  {
+    "username": "Anuj Kumar",
+    "todos": [
+      {
+        "taskId": 4,
+        "task": "Angular 2",
+        "description": "Angular tutorials from tutorialPoint",
+        "duedate": "15-05-2017",
+        "status": "incomplete"
+      },
+      {
+        "taskId": 5,
+        "task": "Redux Framework",
+        "description": "Redux tutorials from githubk",
+        "duedate": "06-05-2017",
+        "status": "complete"
+      },
+      {
+        "taskId": 6,
+        "task": "Learn Bootstrap",
+        "description": "Bootstrap tutorials from W3Schools",
+        "duedate": "17-05-2017",
+        "status": "incomplete"
+      }
+    ]
+  },
+  {
+    "username": "Agam Agarwal",
+    "todos": [
+      {
+        "taskId": 8,
+        "task": "Angular JS 1.5.1",
+        "description": "Angular tutorials from doc.angularjs.org",
+        "duedate": "28-05-2017",
+        "status": "incomplete"
+      },
+      {
+        "taskId": 9,
+        "task": "Spring Framework",
+        "description": "Spring tutorials from javatpoint",
+        "duedate": "06-05-2017",
+        "status": "complete"
+      },
+      {
+        "taskId": 10,
+        "task": "Learn CSS3",
+        "description": "CCS3 tutorials from W3Schools",
+        "duedate": "27-05-2017",
+        "status": "incomplete"
+      }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
